@@ -11,6 +11,7 @@ st.set_page_config(
 )
 
 
+
 # Custom financial website theme
 st.markdown("""
 <style>
@@ -47,9 +48,15 @@ st.markdown("""
 }
 
 
-    h1, h2, h3 {
-        color: #174B35;
-    }
+/* Force explanatory paragraphs to use readable dark text */
+.stApp [data-testid="stMarkdownContainer"] p {
+    color: #26352D !important;
+}
+
+/* Main headings */
+h1, h2, h3 {
+    color: #174B35;
+}
 
     [data-testid="stMetric"] {
         background-color: #FFFFFF;
