@@ -53,9 +53,14 @@ st.markdown("""
     color: #26352D !important;
 }
 
-/* Main headings */
-h1, h2, h3 {
-    color: #174B35;
+/* Keep all section headings readable on mobile */
+.stApp [data-testid="stMarkdownContainer"] h1,
+.stApp [data-testid="stMarkdownContainer"] h2,
+.stApp [data-testid="stMarkdownContainer"] h3,
+.stApp [data-testid="stMarkdownContainer"] h4,
+.stApp [data-testid="stMarkdownContainer"] h5,
+.stApp [data-testid="stMarkdownContainer"] h6 {
+    color: #174B35 !important;
 }
 
     [data-testid="stMetric"] {
